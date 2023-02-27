@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "version": 2.5.0,
     "builds": [
       {
         "src": "server.js",
@@ -15,5 +15,7 @@
         "dest": "server.js"
       }
     ],
-    "memory": "1GiB"
+    "env": {
+    "NODE_OPTIONS": "--max-old-space-size=1024"
+  }
   }
